@@ -7,9 +7,9 @@ export function BeforeAfter() {
     <section id="before-after" className="py-32 bg-black relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-brand-blue font-bold tracking-widest uppercase text-sm mb-4">Transformations</h2>
+          <h2 className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4 font-sans">Transformations</h2>
           <h3 className="text-4xl md:text-6xl font-heading font-black uppercase text-white tracking-tighter leading-none mb-6">
-            Witness the <span className="text-zinc-600">Difference</span>
+            Witness the <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-600">Difference</span>
           </h3>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
             Drag the slider to see dramatic paint correction and detailing results. We bring showroom shine back to your driveway.

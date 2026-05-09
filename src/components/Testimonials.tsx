@@ -26,20 +26,20 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-32 bg-charcoal relative border-y border-white/5 overflow-hidden">
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-blue-600/20 blur-[100px] rounded-full" />
+    <section id="testimonials" className="py-32 bg-[#050505] relative border-y border-white/5 overflow-hidden">
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-orange-600/10 blur-[100px] rounded-full" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 mb-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
-            <h2 className="text-brand-blue font-bold tracking-widest uppercase text-sm mb-4">Client Feedback</h2>
+            <h2 className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4">Client Feedback</h2>
             <h3 className="text-4xl md:text-6xl font-heading font-black uppercase text-white tracking-tighter leading-none">
-              Respected By <span className="text-zinc-600">Enthusiasts</span>
+              Respected By <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-600">Enthusiasts</span>
             </h3>
           </div>
           <div className="flex gap-2">
             {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className="w-8 h-8 text-yellow-500 fill-yellow-500" />
+              <Star key={star} className="w-8 h-8 text-orange-500 fill-orange-500" />
             ))}
           </div>
         </div>
@@ -49,11 +49,11 @@ export function Testimonials() {
       <div className="relative flex overflow-x-hidden w-full group">
         <div className="flex gap-6 animate-scroll whitespace-nowrap px-6 group-hover:[animation-play-state:paused]">
           {[...reviews, ...reviews, ...reviews].map((review, i) => (
-            <div key={i} className="glass-card p-8 w-[400px] shrink-0 border border-white/10 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-blue-400" />
+            <div key={i} className="glass-card p-8 w-[400px] shrink-0 border border-white/10 relative overflow-hidden bg-zinc-900/40">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-600 to-orange-400" />
               <div className="flex gap-1 mb-6">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="w-4 h-4 text-yellow-500 fill-yellow-500" />
+                  <Star key={star} className="w-4 h-4 text-orange-500 fill-orange-500" />
                 ))}
               </div>
               <p className="text-zinc-300 text-base leading-relaxed mb-8 font-light whitespace-normal italic">
@@ -61,7 +61,7 @@ export function Testimonials() {
               </p>
               <div>
                 <h4 className="text-white font-bold font-heading uppercase tracking-wide">{review.name}</h4>
-                <p className="text-blue-500 text-sm font-medium tracking-wider uppercase mt-1">{review.vehicle}</p>
+                <p className="text-orange-500 text-sm font-medium tracking-wider uppercase mt-1">{review.vehicle}</p>
               </div>
             </div>
           ))}

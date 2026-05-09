@@ -12,14 +12,14 @@ export function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-32 bg-black relative border-t border-zinc-900 overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent blur-3xl" />
+    <section className="py-32 bg-[#050505] relative border-t border-zinc-900 overflow-hidden">
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-900/10 via-transparent to-transparent blur-3xl" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-brand-blue font-bold tracking-widest uppercase text-sm mb-4">The Standard</h2>
+          <h2 className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4">The Standard</h2>
           <h3 className="text-4xl md:text-6xl font-heading font-black uppercase text-white tracking-tighter leading-none mb-6">
-            Why We Are <span className="text-gradient">Different</span>
+            Why We Are <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-600">Different</span>
           </h3>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg leading-relaxed">
             We operate at a higher standard. Driven by passion and precision, we treat every vehicle like an exotic car.
@@ -37,12 +37,12 @@ export function WhyChooseUs() {
               className="flex gap-4 group"
             >
               <div className="flex-shrink-0 mt-1">
-                <div className="w-10 h-10 rounded-full glass border-white/10 flex items-center justify-center text-blue-500 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                <div className="w-10 h-10 rounded-full glass border-white/10 flex items-center justify-center text-orange-500 group-hover:scale-110 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
                   <feature.icon className="w-5 h-5" />
                 </div>
               </div>
               <div>
-                <h4 className="text-lg font-heading font-bold text-white mb-2 uppercase tracking-wide group-hover:text-blue-400 transition-colors duration-300">{feature.title}</h4>
+                <h4 className="text-lg font-heading font-bold text-white mb-2 uppercase tracking-wide group-hover:text-orange-400 transition-colors duration-300">{feature.title}</h4>
                 <p className="text-zinc-400 text-sm leading-relaxed">{feature.desc}</p>
               </div>
             </motion.div>

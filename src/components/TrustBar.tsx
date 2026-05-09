@@ -58,7 +58,7 @@ export function TrustBar() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="flex flex-col items-center justify-center text-center px-4"
             >
-              <h3 className="text-4xl md:text-5xl font-sans font-black text-blue-500 leading-none mb-2 tracking-tighter">
+              <h3 className="text-4xl md:text-5xl font-heading font-black text-orange-500 leading-none mb-2 tracking-tighter">
                 <Counter from={0} to={stat.value} suffix={stat.suffix} />
               </h3>
               <p className="text-[9px] font-bold text-zinc-400 uppercase tracking-widest mt-1">{stat.label}</p>

@@ -32,11 +32,11 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-sm rotate-45 transform group-hover:rotate-[135deg] transition-transform duration-500">
-            <span className="-rotate-45 font-black text-xs italic group-hover:-rotate-[135deg] transition-transform duration-500">E.M.D.</span>
+          <div className="w-8 h-8 bg-orange-600 flex items-center justify-center rounded-sm rotate-45 transform group-hover:rotate-[135deg] transition-transform duration-500">
+            <span className="-rotate-45 font-black text-xs italic group-hover:-rotate-[135deg] transition-transform duration-500 text-black">R.G.</span>
           </div>
-          <span className="font-bold text-xl tracking-tighter uppercase text-white">
-            Express <span className="text-blue-500">Mobile</span> Detailing
+          <span className="font-bold text-xl tracking-tighter uppercase text-white font-heading">
+            Royal <span className="text-orange-500 font-heading">Garage</span>
           </span>
         </a>
 
@@ -47,7 +47,7 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 hover:text-blue-400 transition-colors"
+                className="text-[10px] font-semibold uppercase tracking-widest text-zinc-400 hover:text-orange-400 transition-colors"
               >
                 {link.name}
               </a>
@@ -91,7 +91,7 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-heading font-semibold text-zinc-200 uppercase tracking-widest hover:text-blue-500 transition-colors"
+                  className="text-lg font-heading font-semibold text-zinc-200 uppercase tracking-widest hover:text-orange-500 transition-colors"
                 >
                   {link.name}
                 </a>

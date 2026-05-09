@@ -13,10 +13,10 @@ import { Footer } from "@/src/components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#050505] text-white selection:bg-blue-600 selection:text-white flex flex-col relative font-sans">
+    <div className="min-h-screen bg-[#050505] text-white selection:bg-[#FF5A00] selection:text-white flex flex-col relative font-sans">
       {/* Global Ambient Glows */}
-      <div className="fixed top-[-100px] left-[-100px] w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
-      <div className="fixed bottom-[-50px] right-[-50px] w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none z-0"></div>
+      <div className="fixed top-[-100px] left-[-100px] w-[400px] h-[400px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+      <div className="fixed bottom-[-50px] right-[-50px] w-[300px] h-[300px] bg-orange-500/10 rounded-full blur-[100px] pointer-events-none z-0"></div>
       
       <div className="relative z-10 w-full">
         <Navbar />

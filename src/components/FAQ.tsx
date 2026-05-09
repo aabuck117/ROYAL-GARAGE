@@ -14,24 +14,24 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-32 bg-charcoal relative">
+    <section id="faq" className="py-32 bg-[#050505] relative">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-brand-blue font-bold tracking-widest uppercase text-sm mb-4">Answers</h2>
+          <h2 className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4">Answers</h2>
           <h3 className="text-4xl md:text-5xl font-heading font-black uppercase text-white tracking-tighter leading-none">
-            Frequently Asked <span className="text-zinc-600">Questions</span>
+            Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-600">Questions</span>
           </h3>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="rounded-xl border border-white/10 glass-card overflow-hidden">
+            <div key={i} className="rounded-xl border border-white/10 glass-card overflow-hidden bg-black/40">
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
               >
-                <span className="font-heading font-bold text-lg text-white uppercase tracking-wide">{faq.q}</span>
-                <span className="text-blue-500 ml-4 flex-shrink-0">
+                <span className="font-heading font-bold text-lg text-white uppercase tracking-wide group-hover:text-orange-400 transition-colors">{faq.q}</span>
+                <span className="text-orange-500 ml-4 flex-shrink-0">
                   {openIndex === i ? <Minus className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
                 </span>
               </button>
