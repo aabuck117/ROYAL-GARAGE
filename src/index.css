@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-blue: #0076FF;
+  --color-brand-blue-glow: rgba(0, 118, 255, 0.5);
+  --color-charcoal: #121212;
+  --color-metallic: #e0e0e0;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-black/40 backdrop-blur-md border border-white/5;
+  }
+  .glass-card {
+    @apply bg-zinc-900/80 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500;
+  }
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600;
+  }
+  .glow-blue {
+    box-shadow: 0 0 40px var(--color-brand-blue-glow);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#050505] text-white overflow-x-hidden flex flex-col;
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-blue);
+}
